@@ -1,0 +1,68 @@
+<templateSet group="user">
+  <template name="todo" value="/*&#10; @todo: $description$&#10; &#10; @author: Andreas Sahle (@pixelmord)&#10; @date: $date$&#10; @time: $time$&#10; */&#10; $END$" description="create a todo" toReformat="true" toShortenFQNames="true">
+    <variable name="description" expression="" defaultValue="Enter a description" alwaysStopAt="true" />
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="false" />
+    <variable name="time" expression="time()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="CSS" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="swigblock" value="{% block $name$ %}$SELECTION$$END${% endblock %}" description="surround with swig block" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="block name" alwaysStopAt="true" />
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="mm" value="{{$var$}}" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="variable" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="clfn" value="(function ($PARAM1$) {&#10;  'use strict';&#10;  $END$&#10;})($PARAM$);" description="closure function" toReformat="true" toShortenFQNames="true">
+    <variable name="PARAM" expression="" defaultValue="jQuery" alwaysStopAt="true" />
+    <variable name="PARAM1" expression="" defaultValue="$" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="amod" value="(function () {&#10;  'use strict';&#10;  /**&#10;   * @ngdoc module&#10;   * @name $PARAM$&#10;   * @description&#10;   * # $PARAM$&#10;   * $PARAM1$&#10;   */&#10;  angular.module('$PARAM$', [$END$]);&#10;&#10;&#10;})();" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="actrl" value="(function () {&#10;  'use strict';&#10;  /**&#10;   * @ngdoc function&#10;   * @name $PARAM$.controller:$PARAM1$&#10;   * @description&#10;   * # $PARAM$.controller:$PARAM1$&#10;   *  $PARAM2$&#10;   */&#10;  angular.module('$PARAM$')&#10;    .controller('$PARAM1$', $PARAM1$);&#10;&#10;  $PARAM1$.$inject = ['$PARAM3$'];&#10;&#10;  function $PARAM1$($PARAM3$) {&#10;    var vm = this;&#10;    $END$&#10;    activate();&#10;&#10;    function activate() {&#10;&#10;    }&#10;&#10;  }&#10;})();&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="astate" value="(function () {&#10;  'use strict';&#10;  /**&#10;   * @ngdoc configuration&#10;   * @name $PARAM$.$PARAM1$&#10;   * @description&#10;   * # $PARAM$.$PARAM1$&#10;   * $PARAM2$&#10;   */&#10;  angular.module('$PARAM$.$PARAM1$')&#10;    .config(configure);&#10;&#10;  configure.$inject = [&#10;    '$stateProvider'&#10;  ];&#10;&#10;  /* @ngInject */&#10;  function configure($stateProvider) {&#10;    $stateProvider&#10;      .state('$PARAM3$', {&#10;        url: '/$PARAM4$',&#10;        templateUrl: '$PARAM5$',&#10;        controller: '$PARAM6$',&#10;        controllerAs: '$PARAM7$'&#10;      });&#10;  }&#10;})();" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM4" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM5" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM6" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM7" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="drupalJS" value="(function ($, window) {&#10;  'use strict';&#10;  /**&#10;   * $PARAM$.&#10;   */&#10;  Drupal.behaviors.$PARAM1$ = {&#10;    attach: function (context) {&#10;      $PARAM2$&#10;    }&#10;  };&#10;&#10;})(jQuery, this);" description="Drupal behaviour" toReformat="true" toShortenFQNames="true">
+    <variable name="PARAM" expression="" defaultValue="Description" alwaysStopAt="true" />
+    <variable name="PARAM1" expression="snakeCase(fileNameWithoutExtension())" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
