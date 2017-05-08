@@ -1,28 +1,9 @@
 <application>
   <component name="ProjectManager">
     <defaultProject>
-      <component name="ComposerJsonPluginSettings">
-        <unboundedVersionInspectionSettings>
-          <excludedPackages />
-        </unboundedVersionInspectionSettings>
-        <customRepositories />
-      </component>
-      <component name="ComposerSettings">
-        <pharPath>/usr/local/bin</pharPath>
-      </component>
-      <component name="Encoding">
-        <file url="PROJECT" charset="UTF-8" />
-      </component>
       <component name="InspectionProjectProfileManager">
         <option name="PROJECT_PROFILE" />
         <version value="1.0" />
-      </component>
-      <component name="PhpDebugGeneral" xdebug_debug_port="9005" />
-      <component name="PhpProjectSharedConfiguration" php_language_level="7" />
-      <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="php local" />
-      <component name="PropertiesComponent">
-        <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.composer" />
-        <property name="last_opened_file_path" value="/usr/local/bin/php" />
       </component>
     </defaultProject>
   </component>
