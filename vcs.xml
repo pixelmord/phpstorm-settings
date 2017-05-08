@@ -10,7 +10,4 @@
     </option>
     <option name="cloneParentDir" value="$USER_HOME$/workspace" />
   </component>
-  <component name="VcsApplicationSettings">
-    <option name="PATCH_STORAGE_LOCATION" value="$USER_HOME$/workspace/LOCAL/d8patch" />
-  </component>
 </application>

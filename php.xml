@@ -4,11 +4,6 @@
       <PhpCSConfiguration max_messages_per_file="99" timeout="30000" tool_path="/usr/local/bin/phpcs" />
     </phpcs_settings>
   </component>
-  <component name="PhpInterpreters">
-    <interpreters>
-      <interpreter home="/usr/local/bin/php" id="5096d3d6-aef3-43d8-af19-30b763682210" name="php local" debugger_id="php.debugger.XDebug" />
-    </interpreters>
-  </component>
   <component name="PhpInterpretersPhpInfoCache">
     <phpInfoCache>
       <interpreter name="php local">
