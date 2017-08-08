@@ -12,7 +12,7 @@
   <component name="PhpInterpretersPhpInfoCache">
     <phpInfoCache>
       <interpreter name="PHP">
-        <phpinfo binary_type="PHP" php_cgi="/usr/local/Cellar/php70/7.0.18_10/bin/php-cgi" php_cli="/usr/local/Cellar/php70/7.0.18_10/bin/php" path_separator=":" version="7.0.18">
+        <phpinfo binary_type="PHP" php_cgi="/usr/local/Cellar/php70/7.0.20_12/bin/php-cgi" php_cli="/usr/local/Cellar/php70/7.0.20_12/bin/php" path_separator=":" version="7.0.20">
           <additional_php_ini>/usr/local/etc/php/7.0/conf.d/ext-mcrypt.ini, /usr/local/etc/php/7.0/conf.d/ext-mongodb.ini, /usr/local/etc/php/7.0/conf.d/ext-opcache.ini, /usr/local/etc/php/7.0/conf.d/ext-xdebug.ini</additional_php_ini>
           <configuration_file>/usr/local/etc/php/7.0/php.ini</configuration_file>
           <configuration_options>
@@ -66,7 +66,7 @@
             <configuration_option name="exif.encode_unicode" value="ISO-8859-15" />
             <configuration_option name="exit_on_timeout" value="0" />
             <configuration_option name="expose_php" value="1" />
-            <configuration_option name="extension_dir" value="/usr/local/Cellar/php70/7.0.18_10/lib/php/extensions/no-debug-non-zts-20151012" />
+            <configuration_option name="extension_dir" value="/usr/local/Cellar/php70/7.0.20_12/lib/php/extensions/no-debug-non-zts-20151012" />
             <configuration_option name="file_uploads" value="1" />
             <configuration_option name="filter.default" value="unsafe_raw" />
             <configuration_option name="filter.default_flags" value="" />
@@ -326,7 +326,7 @@
             <configuration_option name="zlib.output_handler" value="" />
           </configuration_options>
           <debuggers>
-            <debugger_info debugger="xdebug" debugger_version="2.5.4">
+            <debugger_info debugger="xdebug" debugger_version="2.5.5">
               <debug_extensions />
             </debugger_info>
           </debuggers>
