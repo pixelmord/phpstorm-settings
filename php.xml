@@ -1,13 +1,18 @@
 <application>
   <component name="PhpCodeSniffer">
     <phpcs_settings>
-      <PhpCSConfiguration max_messages_per_file="99" standards="Drupal;DrupalPractice;MySource;PEAR;PHPCS;PSR1;PSR2;Squiz;Zend" timeout="30000" tool_path="/usr/local/bin/phpcs" />
+      <PhpCSConfiguration max_messages_per_file="99" standards="Drupal;DrupalPractice;MySource;PEAR;PSR1;PSR2;Squiz;Zend" timeout="30000" tool_path="/usr/local/bin/phpcs" />
     </phpcs_settings>
+  </component>
+  <component name="PhpInterpreters">
+    <interpreters>
+      <interpreter home="/usr/local/bin/php" id="6f1923c3-53ed-4f5a-906b-3092fde45302" name="PHP 7 local" debugger_id="php.debugger.XDebug" />
+    </interpreters>
   </component>
   <component name="PhpInterpretersPhpInfoCache">
     <phpInfoCache>
-      <interpreter name="PHP">
-        <phpinfo binary_type="PHP" php_cgi="/usr/local/Cellar/php70/7.0.20_12/bin/php-cgi" php_cli="/usr/local/Cellar/php70/7.0.20_12/bin/php" path_separator=":" version="7.0.20">
+      <interpreter name="PHP 7 local">
+        <phpinfo binary_type="PHP" php_cgi="/usr/local/Cellar/php70/7.0.22_14/bin/php-cgi" php_cli="/usr/local/Cellar/php70/7.0.22_14/bin/php" path_separator=":" version="7.0.22">
           <additional_php_ini>/usr/local/etc/php/7.0/conf.d/ext-mcrypt.ini, /usr/local/etc/php/7.0/conf.d/ext-mongodb.ini, /usr/local/etc/php/7.0/conf.d/ext-opcache.ini, /usr/local/etc/php/7.0/conf.d/ext-xdebug.ini</additional_php_ini>
           <configuration_file>/usr/local/etc/php/7.0/php.ini</configuration_file>
           <configuration_options>
@@ -35,7 +40,7 @@
             <configuration_option name="date.default_longitude" value="35.2333" />
             <configuration_option name="date.sunrise_zenith" value="90.583333" />
             <configuration_option name="date.sunset_zenith" value="90.583333" />
-            <configuration_option name="date.timezone" value="Europe/Berlin" />
+            <configuration_option name="date.timezone" value="" />
             <configuration_option name="dba.default_handler" value="flatfile" />
             <configuration_option name="default_charset" value="UTF-8" />
             <configuration_option name="default_mimetype" value="text/html" />
@@ -50,7 +55,7 @@
             <configuration_option name="enable_dl" value="" />
             <configuration_option name="enable_post_data_reading" value="1" />
             <configuration_option name="error_append_string" value="" />
-            <configuration_option name="error_log" value="/var/log/php_errors.log" />
+            <configuration_option name="error_log" value="" />
             <configuration_option name="error_prepend_string" value="" />
             <configuration_option name="error_reporting" value="32767" />
             <configuration_option name="exif.decode_jis_intel" value="JIS" />
@@ -61,7 +66,7 @@
             <configuration_option name="exif.encode_unicode" value="ISO-8859-15" />
             <configuration_option name="exit_on_timeout" value="0" />
             <configuration_option name="expose_php" value="1" />
-            <configuration_option name="extension_dir" value="/usr/local/Cellar/php70/7.0.20_12/lib/php/extensions/no-debug-non-zts-20151012" />
+            <configuration_option name="extension_dir" value="/usr/local/Cellar/php70/7.0.22_14/lib/php/extensions/no-debug-non-zts-20151012" />
             <configuration_option name="file_uploads" value="1" />
             <configuration_option name="filter.default" value="unsafe_raw" />
             <configuration_option name="filter.default_flags" value="" />
@@ -106,7 +111,7 @@
             <configuration_option name="mbstring.substitute_character" value="" />
             <configuration_option name="mcrypt.algorithms_dir" value="" />
             <configuration_option name="mcrypt.modes_dir" value="" />
-            <configuration_option name="memory_limit" value="1024M" />
+            <configuration_option name="memory_limit" value="128M" />
             <configuration_option name="mongodb.debug" value="" />
             <configuration_option name="mysqli.allow_local_infile" value="1" />
             <configuration_option name="mysqli.allow_persistent" value="1" />
@@ -186,7 +191,7 @@
             <configuration_option name="phar.cache_list" value="" />
             <configuration_option name="phar.readonly" value="1" />
             <configuration_option name="phar.require_hash" value="1" />
-            <configuration_option name="post_max_size" value="128M" />
+            <configuration_option name="post_max_size" value="8M" />
             <configuration_option name="precision" value="14" />
             <configuration_option name="realpath_cache_size" value="4096K" />
             <configuration_option name="realpath_cache_ttl" value="120" />
@@ -216,7 +221,7 @@
             <configuration_option name="session.name" value="PHPSESSID" />
             <configuration_option name="session.referer_check" value="" />
             <configuration_option name="session.save_handler" value="files" />
-            <configuration_option name="session.save_path" value="/tmp" />
+            <configuration_option name="session.save_path" value="" />
             <configuration_option name="session.serialize_handler" value="php" />
             <configuration_option name="session.upload_progress.cleanup" value="1" />
             <configuration_option name="session.upload_progress.enabled" value="1" />
@@ -240,8 +245,8 @@
             <configuration_option name="sys_temp_dir" value="" />
             <configuration_option name="track_errors" value="1" />
             <configuration_option name="unserialize_callback_func" value="" />
-            <configuration_option name="upload_max_filesize" value="128M" />
-            <configuration_option name="upload_tmp_dir" value="/tmp" />
+            <configuration_option name="upload_max_filesize" value="2M" />
+            <configuration_option name="upload_tmp_dir" value="" />
             <configuration_option name="url_rewriter.tags" value="a=href,area=href,frame=src,input=src,form=fakeentry" />
             <configuration_option name="user_agent" value="" />
             <configuration_option name="user_dir" value="" />
@@ -273,8 +278,8 @@
             <configuration_option name="xdebug.force_display_errors" value="0" />
             <configuration_option name="xdebug.force_error_reporting" value="0" />
             <configuration_option name="xdebug.halt_level" value="0" />
-            <configuration_option name="xdebug.idekey" value="PHPSTORM" />
-            <configuration_option name="xdebug.max_nesting_level" value="10000" />
+            <configuration_option name="xdebug.idekey" value="" />
+            <configuration_option name="xdebug.max_nesting_level" value="256" />
             <configuration_option name="xdebug.max_stack_frames" value="-1" />
             <configuration_option name="xdebug.overload_var_dump" value="2" />
             <configuration_option name="xdebug.profiler_aggregate" value="0" />
@@ -293,7 +298,7 @@
             <configuration_option name="xdebug.remote_host" value="localhost" />
             <configuration_option name="xdebug.remote_log" value="" />
             <configuration_option name="xdebug.remote_mode" value="req" />
-            <configuration_option name="xdebug.remote_port" value="9005" />
+            <configuration_option name="xdebug.remote_port" value="9000" />
             <configuration_option name="xdebug.scream" value="0" />
             <configuration_option name="xdebug.show_error_trace" value="0" />
             <configuration_option name="xdebug.show_exception_trace" value="0" />
