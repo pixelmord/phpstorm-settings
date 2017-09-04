@@ -1,0 +1,6 @@
+<application>
+  <component name="DiffManager">
+    <filesTool value="/Applications/Kaleidoscope.app/Contents/MacOS/Kaleidoscope" newValue="/Applications/Kaleidoscope.app/Contents/MacOS/Kaleidoscope" />
+    <mergeToolParameters value="%1 %2 %3 %4" />
+  </component>
+</application>
