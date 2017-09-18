@@ -1,7 +1,7 @@
 <application>
   <component name="PhpCodeSniffer">
     <phpcs_settings>
-      <PhpCSConfiguration max_messages_per_file="99" standards="Drupal;DrupalPractice;MySource;PEAR;PSR1;PSR2;Squiz;Zend" timeout="30000" tool_path="$USER_HOME$/.composer/vendor/bin/phpcs" />
+      <PhpCSConfiguration max_messages_per_file="99" standards="Drupal;DrupalPractice;MySource;PEAR;PHPCS;PSR1;PSR2;Squiz;Zend" timeout="30000" tool_path="$USER_HOME$/.composer/vendor/bin/phpcs" />
     </phpcs_settings>
   </component>
   <component name="PhpInterpreters">
